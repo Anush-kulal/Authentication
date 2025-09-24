@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<div class="auth-box">
+  <h4 class="mb-3 text-center">Login</h4>
+  <form method="POST">
+    <div class="mb-3">
+      <label class="form-label">Username</label>
+      <input class="form-control" name="username" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Password</label>
+      <input type="password" class="form-control" name="password" required>
+    </div>
+    <button class="btn btn-success w-100 btn-custom" type="submit">Login & Get OTP</button>
+  </form>
+  <div class="text-center mt-3"><small>New? <a href="/register">Register</a></small></div>
+</div>
+{% endblock %}

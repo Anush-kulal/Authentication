@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<div class="auth-box text-center">
+  <h4>Welcome, {{ username }} 🎉</h4>
+  <p class="mt-3">You have successfully logged in with multi-factor authentication.</p>
+  <a href="/logout" class="btn btn-danger btn-custom mt-2">Logout</a>
+</div>
+{% endblock %}
